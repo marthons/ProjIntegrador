@@ -8,6 +8,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #000;
         }
         header {
             background-color: #333;
@@ -106,10 +107,33 @@
             text-align: center;
             padding: 10px 0;
         }
-        .imagem {
+         
+        .footer ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                background-color: #333;
+            }
+        .footer li {
+                display: inline;
+                margin-right: 20px;
+            }
+        .footer a {
+                text-decoration: none;
+                color: #808080;
+                text-align: center;
+            }
+        .imagem1 {
             width: 100%;
             height: auto;
             display: block;
+        }
+        .imagem2 {
+            width: "100" /* Defina a largura da imagem como 100% da largura da janela de visualização */
+            height:"10"
+            display: block; /* Remova espaços em branco extras abaixo da imagem */
+            float: left; /* Alinha a imagem à esquerda */
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -129,7 +153,7 @@
     </header>
 
     <div class="banner">
-        <img src="C:\AAPROZ\bannerPromo.jpg" alt="Banner Promocional" class="imagem">
+        <img src="C:\AAPROZ\bannerPromo.jpg" alt="Banner Promocional" class="imagem1">
     </div>
 
     <div class="filters">
@@ -185,12 +209,14 @@
     </div>
 
     <footer>
+        <div class="footer">
         <ul>
             <li><a href="pagina1.html">Página A</a></li>
             <li><a href="pagina2.html">Página B</a></li>
             <li><a href="pagina3.html">Página C</a></li>
             <li><a href="pagina4.html">Página D</a></li>
         </ul>
+        </div>
     </footer>
 </body>
 </html>
