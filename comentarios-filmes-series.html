@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sua Página</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        header .logo {
+            display: inline-block;
+            text-align: left;
+            font-size: 24px;
+            margin-right: 20px;
+        }
+        header .menu {
+            display: inline-block;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+        }
+
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #808080; 
+            text-align: center;
+        }
+        .banner {
+            background-image: url('C:\AAPROZ\bannerPromo.jpg');
+            background-size: cover;
+            height: 410px;
+            background-position: center center;
+        }
+        .filters {
+            background-color: #000000;
+            padding: 20px;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        button {
+            background-color: #D0B312;
+            color: #000000;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .content .item {
+            flex: 1;
+            padding: 20px;
+            text-align: center; /* Centraliza o texto horizontalmente */
+            color: #808080; /* Cor cinza */
+            background-color: #000000; /* Fundo preto */
+        }
+        .comment {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+        .comment img {
+            max-width: 100%;
+        }
+        .comment-form {
+            background-color: #000000;
+            padding: 20px;
+        }
+        h1 {
+            color: #808080; 
+            text-align: center;
+        }
+        
+        label {
+            color: #808080; 
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .imagem1 {
+            width: 100%; /* Defina a largura da imagem como 100% da largura da janela de visualização */
+            height:"100"
+            display: block; /* Remova espaços em branco extras abaixo da imagem */
+        }
+        .imagem2 {
+            width: "100" /* Defina a largura da imagem como 100% da largura da janela de visualização */
+            height:"10"
+            display: block; /* Remova espaços em branco extras abaixo da imagem */
+            float: left; /* Alinha a imagem à esquerda */
+            margin-right: 10px;
+        }
+        .imagem2 {
+            max-width: 50px; /* Defina a largura máxima da imagem */
+            height: auto; /* Mantenha a proporção da imagem */
+            display: block; /* Remova espaços em branco extras abaixo da imagem */
+            float: right; 
+            margin-right: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+             <img src="C:\AAPROZ\imdb.jpg" alt="Logo IMDB"  class=".imagem2">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="pagina1.html">Página 1</a></li>
+                <li><a href="pagina2.html">Página 2</a></li>
+                <li><a href="pagina3.html">Página 3</a></li>
+                <li><a href="pagina4.html">Página 4</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <div class="banner">
+        <img src="C:\AAPROZ\bannerPromo.jpg" alt="banner Promocional" class=".imagem1">
+    </div>
+    
+    <div class="filters">
+        <form action="/pesquisar" method="GET">
+            <input type="text" name="q" placeholder="Pesquisar...">
+            <button type="submit">Pesquisar</button>
+        </form>        
+    </div>
+    
+    <div class="content">
+        <div class="item">
+            <div class="comment">
+                <img src="C:\AAPROZ\chaplin.jpg" alt="banner Promocional" class=".imagem3"><br>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."<br>
+                7.9
+            </div>
+        </div>
+        <div class="item">
+            <div class="comment">
+                <img src="C:\AAPROZ\goonies.jpg" alt="banner Promocional" class=".imagem3"><br>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."<br>
+                8.7
+            </div>
+        </div>
+        <div class="item">
+            <div class="comment">
+                <img src="C:\AAPROZ\killbill.jpg" alt="banner Promocional" class=".imagem3"><br>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."<br>
+                9.5
+            </div>
+        </div>
+    </div>
+    
+    <div class="comment-form">
+        <h1>Deixe seu Comentário e Avaliação</h1>
+        <form action="processar_comentario.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+    
+            <label for="comentario">Comentário:</label>
+            <textarea id="comentario" name="comentario" rows="4" required></textarea>
+    
+            <label for="nota">Avaliação por Nota:</label>
+            <select id="nota" name="nota">
+                <option value="5">5 - Excelente</option>
+                <option value="4">4 - Muito Bom</option>
+                <option value="3">3 - Bom</option>
+                <option value="2">2 - Regular</option>
+                <option value="1">1 - Ruim</option>
+            </select>
+            <button type="submit">Enviar Comentário</button>
+        </form>
+    </div>
+    
+    <footer>
+        <ul>
+            <li><a href="pagina1.html">Página A</a></li>
+            <li><a href="pagina2.html">Página B</a></li>
+            <li><a href="pagina3.html">Página C</a></li>
+            <li><a href="pagina4.html">Página D</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
