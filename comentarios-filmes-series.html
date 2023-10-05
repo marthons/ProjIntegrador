@@ -192,10 +192,13 @@
         <h1>Deixe seu Comentário e Avaliação</h1>
         <form action="processar_comentario.php" method="post">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-
+            <input type="text" id="nome" name="nome" placeholder="Nome" required>
+        
             <label for="comentario">Comentário:</label>
-            <textarea id="comentario" name="comentario" rows="4" required></textarea>
+            <textarea id="comentario" name="comentario" rows="4" placeholder="Insira seu comentário aqui" required></textarea>
+        
+            <button type="submit">Enviar</button>
+        
 
             <label for="nota">Avaliação por Nota:</label>
             <select id="nota" name="nota">
