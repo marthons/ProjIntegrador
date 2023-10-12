@@ -24,4 +24,38 @@ body .container {
     color: #E2B616;
 }
 
+.card-img-top {
+    min-height: 350px;
+    height: 350px;
+}
+
+.card {
+    border: 3px solid #E2B616;
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: none;
+}
+
+.card-body {
+    color: white;
+}
+
+.card-title {
+    color: #E2B616;
+}
+
+.card-text {
+    opacity: 0.7;
+}
+
+.img-card-noticia  {
+    width: 150px;
+    height: 200px;
+}
+
+.img-noticia {
+    max-height: 200px;
+    min-height: 200px;
+}
+
 
