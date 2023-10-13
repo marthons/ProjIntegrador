@@ -1,0 +1,64 @@
+
+#home-footer {
+    height: 10vh;
+    background-color: #121212;
+    color: white;
+    border-bottom: 4px solid #E2B616;
+}
+
+#logo-site {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    color: #E2B616;
+}
+
+#home-footer nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: space-between;
+}
+
+#home-footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+#home-footer  ul li a {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #E2B616;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#home-footer  ul li {
+   border-right: 2px dashed #E2B616;
+   margin: auto auto;
+
+}
+
+#home-footer  ul li:last-child {
+    border-right: 0px dashed #E2B616;
+ 
+ }
+
+.profile-icon {
+    font-size: '50%';
+    line-height: 50px;
+    color: #E2B616;
+    text-decoration: none;
+    padding-left: 100px;
+}
+
+#div-menu-profile{
+    display: flex;
+    flex-direction: row;
+}

@@ -3,10 +3,10 @@ const menuContainer = document.getElementById("home-header");
 const menuNav = document.createElement("nav");
 
 const menuItems = [
-    { label: "Top Filmes", link: "topFilmes.html" },
+    { label: "Atores", link: "../atores-vida-obra.html" },
     { label: "Comentarios", link: "../comentarios-filmes-series.html" },
     { label: "Destaques de Hoje", link: "../destaquesDeHoje.html" },
-    { label: "Atores", link: "../atores-vida-obra.html" },
+    { label: "Sair", link: "../login.html" },
 ];
 
 const menuList = document.createElement("ul");
@@ -44,3 +44,4 @@ menuNav.appendChild(imageLogoLink)
 divMenuProfile.appendChild(menuList)
 divMenuProfile.appendChild(personLink)
 menuNav.appendChild(divMenuProfile)
+
