@@ -1,3 +1,8 @@
+* {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -14,9 +19,15 @@ header {
     align-items: center;
 }
 
+
 main {
     text-align: center;
     padding: 20px;
+}
+section{
+    display: block;
+    padding: auto;
+    margin: auto;
 }
 section{
     display: block;
@@ -123,6 +134,7 @@ video::-webkit-media-controls-enclosure {
 form {
     max-width: 500px;
     margin:  auto;
+    margin:  auto;
     padding: 20px;
 }
 
@@ -154,6 +166,9 @@ button {
     padding: 13%;
     justify-content: space-between;
     align-items: center;
+    padding: 13%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .content .item {
@@ -163,10 +178,12 @@ button {
     color: #808080;
     background-color: #000;
     margin: auto;
+    margin: auto;
 }
 
 .comment {
     border: 1px solid #ccc;
+
 
 }
 
@@ -178,7 +195,10 @@ button {
     background-color: #000;
     padding: 20px;
     margin: auto;
+    margin: auto;
 }
+
+
 
 
 
@@ -196,6 +216,7 @@ h3 {
     color: #808080;
     text-align: center;
 }
+
 
 p {
     color: #D0B312;
@@ -242,10 +263,14 @@ footer {
     width: "100"
     height "10"
     display block;
+    height "10"
+    display block;
     float: left;
+
 
     margin-right: 10
 }
+
 
 .container {
     position: right;
@@ -253,6 +278,7 @@ footer {
     max-width: 100%;
     margin: 0 auto;
 }
+
 
 .gallery {
     display: flex;
@@ -263,6 +289,7 @@ footer {
     animation-duration: 20s;
     animation-iteration-count: infinite;
 }
+
 
 .item {
     width: 250px;
