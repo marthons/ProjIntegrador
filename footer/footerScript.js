@@ -24,7 +24,7 @@ const footerImageLogoLink = document.createElement("a");
 footerImageLogoLink.href = "../Home/home.html";
 
 const footerImageLogo = document.createElement("span");
-footerImageLogo.id = "logo-site-footer"; // ID diferente
+footerImageLogo.id = "logo-site"; // ID diferente
 footerImageLogo.innerHTML = "IMBD";
 
 footerImageLogoLink.appendChild(footerImageLogo);
