@@ -3,10 +3,10 @@ const menuContainer = document.getElementById("home-header");
 const menuNav = document.createElement("nav");
 
 const menuItems = [
-    { label: "Atores", link: "../atores-vida-obra.html" },
-    { label: "Comentarios", link: "../comentarios-filmes-series.html" },
-    { label: "Destaques de Hoje", link: "../destaquesDeHoje.html" },
-    { label: "Sair", link: "../login.html" },
+    { label: "Atores", link: "./atores-vida-obra.html" },
+    { label: "Comentarios", link: "./comentarios-filmes-series.html" },
+    { label: "Destaques de Hoje", link: "./destaquesDeHoje.html" },
+    { label: "Sair", link: "./login.html" },
 ];
 
 const menuList = document.createElement("ul");
@@ -21,7 +21,7 @@ menuItems.forEach(item => {
 });
 
 const imageLogoLink = document.createElement("a");
-imageLogoLink.href = "../Home/home.html"
+imageLogoLink.href = "./home.html"
 
 const imageLogo = document.createElement("span")
 imageLogo.id = "logo-site"
