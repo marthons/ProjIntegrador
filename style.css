@@ -92,6 +92,8 @@ button {
 }
 
 .content {
+    width: auto;
+    height: auto;
     display: flex;
     padding: 20px;
     justify-content: space-between;
@@ -107,24 +109,15 @@ button {
     background-color: #000;
     margin: auto;
     overflow: auto;
-    -ms-overflow-style: none;
-    scrollbar-color: transparent transparent;
 }
 
-.content .item::-webkit-scrollbar {
-    width: 10px; /* Largura da barra de rolagem */
-}
 
-.content .item::-webkit-scrollbar-thumb {
-    background: transparent; /* Cor da barra de rolagem */
-}
-
-.content .item::-webkit-scrollbar-track {
-    background: transparent; /* Cor do fundo da barra de rolagem */
-}
 
 .comment {
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .comment img {
@@ -156,7 +149,9 @@ h3 {
 p {
     color: #D0B312;
     text-align: center;
-    width: 250px;
+    width: auto;
+    height: auto;
+    justify-content: center;
     height: 250px;
 
 }
@@ -167,6 +162,12 @@ p {
     width: 250px;
     height: auto;
     font-family: 'Times New Roman', Times, serif;
+}
+
+p .texto {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .imagem1 {
@@ -193,10 +194,6 @@ p {
 
 .item {
     width: 250px;
-    height: 250px;
-    flex-shrink: 0;
-    transition: all 500ms ease-in-out;
-    opacity: 100;
     width: 500%;
 }
 

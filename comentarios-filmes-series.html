@@ -36,87 +36,91 @@
                 <li><a href="login.html">Sair</a></li>
             </ul>
         </div> -->
-
-    <div class="banner">
-        <img src=".\img\bannerPromo.jpg" alt="Banner Promocional" class="imagem1">
-    </div>
-
-    <div class="filters">
-        <form action="/pesquisar" method="GET">
-            <input type="text" name="q" placeholder="Pesquisar...">
-            <button type="submit">Pesquisar</button>
-        </form>
-    </div>
-    <section>
-        <div class="content">
-            <div class="item">
-                <div class="comment">
-                    <img src=".\img\chaplin.jpg" alt="Chaplin" class="imagem"><br>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum."<br>
-                    7.9
-                </div>
-            </div>
-            <div class="item">
-                <div class="comment">
-                    <img src=".\img\goonies.jpg" alt="Goonies" class="imagem"><br>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum."<br>
-                    8.7
-                </div>
-            </div>
-            <div class="item">
-                <div class="comment">
-                    <img src=".\img\killbill.jpg" alt="Kill Bill" class="imagem"><br>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum."<br>
-                    9.5
-                </div>
-            </div>
+    <main>
+        <div class="banner">
+            <img src=".\img\bannerPromo.jpg" alt="Banner Promocional" class="imagem1">
         </div>
-    </section>
-    <div class="comment-form">
-        <h1>Deixe seu Comentário e Avaliação</h1>
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Nome" required>
 
-            <label for="comentario">Comentário:</label>
-            <textarea id="comentario" name="comentario" rows="4" placeholder="Insira seu comentário aqui"
-                required></textarea>
+        <div class="filters">
+            <form action="/pesquisar" method="GET">
+                <input type="text" name="q" placeholder="Pesquisar...">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+        <section>
+            <div class="content">
+                <div class="item">
+                    <div class="comment">
+                        <img src=".\img\chaplin.jpg" alt="Chaplin" class="imagem"><br>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum."<br>
+                        7.9
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="comment">
+                        <img src=".\img\goonies.jpg" alt="Goonies" class="imagem"><br>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum."<br>
+                        8.7
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="comment">
+                        <img src=".\img\killbill.jpg" alt="Kill Bill" class="imagem"><br>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum."<br>
+                        9.5
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="comment-form">
+            <h1>Deixe seu Comentário e Avaliação</h1>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome" required>
 
-            <label for="nota">Avaliação por Nota:</label>
-            <select id="nota" name="nota" class="star-rating">
-                <option value="5">&#9733; &#9733; &#9733; &#9733; &#9733; - Excelente</option>
-                <option value="4">&#9733; &#9733; &#9733; &#9733; &#9734; - Muito Bom</option>
-                <option value="3">&#9733; &#9733; &#9733; &#9734; &#9734; - Bom</option>
-                <option value="2">&#9733; &#9733; &#9734; &#9734; &#9734; - Regular</option>
-                <option value="1">&#9733; &#9734; &#9734; &#9734; &#9734; - Ruim</option>
-            </select>
+                <label for="comentario">Comentário:</label>
+                <textarea id="comentario" name="comentario" rows="4" placeholder="Insira seu comentário aqui"
+                    required></textarea>
 
-            <button type="button" onclick="adicionarComentario()">Enviar Comentário</button>
-        </form>
-        <ul id="comentarios"></ul>
-    </div>
-    </div>
+                <label for="nota">Avaliação por Nota:</label>
+                <select id="nota" name="nota" class="star-rating">
+                    <option value="5">&#9733; &#9733; &#9733; &#9733; &#9733; - Excelente</option>
+                    <option value="4">&#9733; &#9733; &#9733; &#9733; &#9734; - Muito Bom</option>
+                    <option value="3">&#9733; &#9733; &#9733; &#9734; &#9734; - Bom</option>
+                    <option value="2">&#9733; &#9733; &#9734; &#9734; &#9734; - Regular</option>
+                    <option value="1">&#9733; &#9734; &#9734; &#9734; &#9734; - Ruim</option>
+                </select>
+
+                <button type="button" onclick="adicionarComentario()">Enviar Comentário</button>
+            </form>
+            <ul id="comentarios"></ul>
+        </div>
+        </div>
+    </main>
     <script src="./Menu/menuScript.js"></script>
 
     <footer id="home-footer"></footer>
