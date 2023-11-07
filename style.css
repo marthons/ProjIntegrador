@@ -60,7 +60,6 @@ main {
     padding: 20px;
 }
 
-
 form {
     max-width: 500px;
     margin:  auto;
@@ -111,8 +110,6 @@ button {
     overflow: auto;
 }
 
-
-
 .comment {
     /* border: 1px solid #ccc; */
     align-items: center;
@@ -152,8 +149,6 @@ p {
     width: auto;
     height: auto;
     justify-content: center;
-    height: 250px;
-
 }
 
 .texto {
@@ -170,6 +165,12 @@ p .texto {
     align-items: center;
 }
 
+#filme-serie {
+    color: #d0b312;
+    font-size: 55px;
+    
+}
+
 .imagem1 {
     width: 100%;
     height: auto;
@@ -183,7 +184,6 @@ p .texto {
     float: left;
     margin-right: 10
 }
-
 
 .container {
     position: right;
@@ -201,12 +201,15 @@ p .texto {
     color: #D0B312;
 }
 
-#comentario {
+#comentario, #nome-filme-serie, #nome-usuario{
     color: #D0B312;
+    width: auto;
+    height: auto;
 }
 
 #nota {
     color: #D0B312;
+    text-align: right;
 }
 
 .star-rating {

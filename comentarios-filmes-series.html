@@ -19,23 +19,14 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="./js/script.js" defer></script>
+    <script src="./js/comentarios.js" defer></script>
     <title>Comentários Filmes&Séries</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header id="home-header"></header>
-    <!--<div class="logo">
-            <img src=".\img\imdb.jpg" alt="Logo IMDB" class="imagem">
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="destaquesDeHoje.html">Destaques</a></li>
-                <li><a href="atores-vida-obra.html">Atores-vida-obra</a></li>
-                <li><a href="login.html">Sair</a></li>
-            </ul>
-        </div> -->
+
     <main>
         <div class="banner">
             <img src=".\img\bannerPromo.jpg" alt="Banner Promocional" class="imagem1">
@@ -48,95 +39,61 @@
             </form>
         </div>
         <section>
-            <div class="content">
-                <div class="item">
-                    <div class="comment">
-                        <img src=".\img\chaplin.jpg" alt="Chaplin" class="imagem"><br>
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum."<br>
-                        7.9
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="comment">
-                        <img src=".\img\goonies.jpg" alt="Goonies" class="imagem"><br>
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum."<br>
-                        8.7
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="comment">
-                        <img src=".\img\killbill.jpg" alt="Kill Bill" class="imagem"><br>
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum."<br>
-                        9.5
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="comment-form">
             <h1>Deixe seu Comentário e Avaliação</h1>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+
+            <form id="comentario-form">
+                <label for="nome-usuario">Seu Nome:</label>
+                <input type="text" id="nome-usuario" required>
+
+                <label for="nome-filme-serie">Nome do Filme ou Série:</label>
+                <input type="text" id="nome-filme-serie" required>
 
                 <label for="comentario">Comentário:</label>
-                <textarea id="comentario" name="comentario" rows="4" placeholder="Insira seu comentário aqui"
-                    required></textarea>
+                <textarea id="comentario" rows="4" required></textarea>
 
-                <label for="nota">Avaliação por Nota:</label>
-                <select id="nota" name="nota" class="star-rating">
-                    <option value="5">&#9733; &#9733; &#9733; &#9733; &#9733; - Excelente</option>
-                    <option value="4">&#9733; &#9733; &#9733; &#9733; &#9734; - Muito Bom</option>
-                    <option value="3">&#9733; &#9733; &#9733; &#9734; &#9734; - Bom</option>
-                    <option value="2">&#9733; &#9733; &#9734; &#9734; &#9734; - Regular</option>
-                    <option value="1">&#9733; &#9734; &#9734; &#9734; &#9734; - Ruim</option>
-                </select>
-
-                <button type="button" onclick="adicionarComentario()">Enviar Comentário</button>
+                <label for="nota">Nota (de 1 a 5):</label>
+                <input type="number" id="nota" min="1" max="5" required>
+                <div>
+                    <button type="submit">Comentar</button>
+                </div>
             </form>
-            <ul id="comentarios"></ul>
-        </div>
-        </div>
+
+            <div id="comentarios">
+                <div class="comentario">
+                    <h3>@PulpFictionFan</h3>
+                    <p id="filme-serie">Filme/Série: Chaplin</p>
+                    <p>Cometário: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit in recusandae,
+                        distinctio quod vero dicta minus nemo esse accusamus ipsum vel natus aliquam quisquam! Iure
+                        fugit enim ipsum, officia culpa laudantium consectetur voluptas laborum, molestiae architecto
+                        fuga sit eveniet qui quisquam numquam quis porro earum illo incidunt. Sint, ratione libero.</p>
+                    <p id="nota">Nota:3/5</p>
+                </div>
+                <div class="comentario">
+                    <h3>@InceptionEnthusiast</h3>
+                    <p id="filme-serie">Filme/Série: Matrix</p>
+                    <p>Cometário: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odio tempora iste
+                        quisquam a nisi officia dolor provident maxime quidem, odit nulla esse omnis nobis optio sunt
+                        minus nostrum enim temporibus! Aperiam eius nulla corrupti perferendis, sapiente rem. Provident
+                        maxime est officia alias nihil laudantium labore beatae quae unde cupiditate.</p>
+                    <p id="nota">Nota:4/5</p>
+                </div>
+                <div class="comentario">
+                    <h3>@GodfatherGuru</h3>
+                    <p id="filme-serie">Filme/Série: Os Goonies</p>
+                    <p>Cometário: Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum itaque animi,
+                        laudantium optio sit perspiciatis dolores facilis sunt consequatur autem voluptatibus assumenda
+                        expedita voluptatum recusandae aliquam quis dignissimos perferendis aliquid ipsa sint
+                        repudiandae. Ipsum quae repellendus animi saepe voluptas omnis et, voluptatibus labore
+                        molestias, error sint tenetur ratione enim explicabo?</p>
+                    <p id="nota">Nota:5/5</p>
+                </div>
+            </div>
     </main>
     <script src="./Menu/menuScript.js"></script>
 
     <footer id="home-footer"></footer>
 
     <script src="./footer/footerScript.js"></script>
-    <!-- <footer>
-        <div class="footer">
-        <ul>
-            <li><a href="pagina1.html">Instagram</a></li>
-            <li><a href="pagina2.html">Facebook</a></li>
-            <li><a href="pagina3.html">Twiter</a></li>
-            <li><a href="pagina4.html">Tik-Tok</a></li>
-            <li><a href="pagina4.html">Sobre nós</a></li>
-        </ul>
-        </div>
-    </footer>-->
 
 </body>
 
