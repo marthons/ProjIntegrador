@@ -1,4 +1,38 @@
 document.addEventListener("DOMContentLoaded", function() {
+    const stars = document.querySelectorAll(".star");
+    const result = document.getElementById("result");
+
+    stars.forEach((star) => {
+        star.addEventListener("mouseover", function() {
+            const rating = this.getAttribute("data-rating");
+            highlightStars(rating);
+        });
+
+        star.addEventListener("mouseout", function() {
+            const currentRating = result.textContent.match(/\d+/);
+            highlightStars(currentRating);
+        });
+
+        star.addEventListener("click", function() {
+            const rating = this.getAttribute("data-rating");
+            result.textContent = `Avaliação: ${rating} estrelas`;
+        });
+    });
+
+    function highlightStars(rating) {
+        stars.forEach((star) => {
+            if (star.getAttribute("data-rating") <= rating) {
+                star.style.color = "gold";
+            } else {
+                star.style.color = "grey";
+            }
+        });
+    }
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
     const comentarioForm = document.getElementById("comentario-form");
     const comentariosDiv = document.getElementById("comentarios");
 
@@ -30,3 +64,4 @@ document.addEventListener("DOMContentLoaded", function() {
         comentarioForm.reset();
     });
 });
+

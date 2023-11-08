@@ -51,8 +51,15 @@
                 <label for="comentario">Comentário:</label>
                 <textarea id="comentario" rows="4" required></textarea>
 
-                <label for="nota">Nota (de 1 a 5):</label>
-                <input type="number" id="nota" min="1" max="5" required>
+                <div class="rating" id="rating">
+                    <span class="star" data-rating="1">&#9733;</span>
+                    <span class="star" data-rating="2">&#9733;</span>
+                    <span class="star" data-rating="3">&#9733;</span>
+                    <span class="star" data-rating="4">&#9733;</span>
+                    <span class="star" data-rating="5">&#9733;</span>
+                </div>
+            
+                <p class="result" id="result">Avaliação: 0 estrelas</p>
                 <div>
                     <button type="submit">Comentar</button>
                 </div>

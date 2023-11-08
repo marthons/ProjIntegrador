@@ -219,4 +219,20 @@ p .texto {
     background-color: transparent;
 }
 
+.rating {
+    font-size: 40px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.star {
+    display: inline-block;
+    padding: 5px;
+}
+
+.result {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
 
