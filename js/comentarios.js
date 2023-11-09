@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const nomeUsuarioInput = document.getElementById("nome-usuario");
         const nomeFilmeSerie = document.getElementById("nome-filme-serie").value;
         const comentario = document.getElementById("comentario").value;
-        const nota = document.getElementById("nota").value;
+        let nota = Math.floor(Math.random() * 5) + 1;
 
         // Adicione "@" automaticamente ao nome de usuário
         const nomeUsuario = `@${nomeUsuarioInput.value}`;
