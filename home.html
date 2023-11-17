@@ -1,167 +1,238 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filmes online</title>
-    <link rel="stylesheet" href="./Home.css">
-    <link rel="stylesheet" href="./Menu/Menu.css">
-    <link rel="stylesheet" href="./footer/footer.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filmes online</title>
+  <link rel="stylesheet" href="./Home.css">
+  <link rel="stylesheet" href="./Menu/Menu.css">
+  <link rel="stylesheet" href="./footer/footer.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
+
 <body class="container-fluid">
-    <header id="home-header"></header>
-    <main>
-        <section>
-            <div id="carousel-main" class="carousel slide w-50 m-auto" data-ride="carousel" style="max-width: 60%; height: 600px;">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-main" data-slide-to="1"></li>
-                    <li data-target="#carousel-main" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" style="max-width: 100%; height: 100%; position: relative;">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100 h-100" src="./img/theFlash.webp" alt="First slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>The flash</h5>
-                            <p>Uma aventura inusitada na velocidade da luz!</p>
-                          </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100 h-100" src="./img/Superhomem.webp" alt="Second slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Super-homem</h5>
-                            <p>O Unico e forte homem de aço.</p>
-                          </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100 h-100" src="./img/homemFerro.webp" alt="Third slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Homem de Ferro</h5>
-                            <p>O Bilhonário Tony Stark e sua busca pela paz no mundo.</p>
-                          </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carousel-main" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel-main" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+  <header id="home-header"></header>
+  <main>
+    <section>
+      <div id="carousel-main" class="carousel slide w-50 m-auto" data-ride="carousel"
+        style="max-width: 60%; height: 600px;">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-main" data-slide-to="1"></li>
+          <li data-target="#carousel-main" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" style="max-width: 100%; height: 100%; position: relative;">
+          <div class="carousel-item active">
+            <img class="d-block w-100 h-100" src="./img/theFlash.webp" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>The flash</h5>
+              <p>Uma aventura inusitada na velocidade da luz!</p>
             </div>
-        </section>
-        <h2 style="margin-left: 40px; padding-left: 10px; border-left: 2px solid #E2B616;color: white;">Em Destaque Hoje</h2>
-
-        <section class="mt-5 w-60 d-flex flex-row align-content-center justify-content-around">
-
-              <a href="Home.html">
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/adão.png" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">"Adão Negro" conta a história de Teth-Adam, um antigo campeão egípcio que ganhou poderes mágicos que o transformaram em um ser superpoderoso, mas que, ao longo dos séculos, sucumbe à escuridão. Interpretado por Dwayne Johnson, o filme segue a jornada do Adão Negro em busca de redenção e justiça, enquanto ele enfrenta desafios sobrenaturais e outros super-heróis da DC.</p>
-                </div>
-              </div>
-              </a>
-              <a href="Home.html">
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/bezouro-azul.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Bezouro Azul é um personagem de quadrinhos da DC Comics e parte da equipe Os Novos Titãs. O filme pode explorar as aventuras desse super-herói, também conhecido como Ted Kord.</p>
-                </div>
-              </div>
-              </a>
-              <a href="Home.html">
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/avatar.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">"Avatar" segue a jornada de Jake Sully, um ex-militar paraplégico, que participa de um programa para habitar um avatar na lua Pandora. Lá, ele se apaixona por uma Na'vi, Neytiri, e se envolve em uma batalha épica entre os nativos e os humanos que desejam explorar os recursos do planeta. O filme é uma exploração de temas como colonização, respeito pela natureza e identidade.</p>
-                </div>
-              </div>
-              </a>
-              <a href="Home.html">
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/barbie.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">A série de filmes da Barbie é composta por várias histórias em que a boneca Barbie assume uma variedade de papéis e aventuras. Cada filme oferece uma narrativa única e muitas vezes aborda mensagens de amizade, autoaceitação e positividade. As histórias variam desde contos de fadas até aventuras modernas, sempre com a personagem Barbie no centro das experiências emocionantes.</p>
-                </div>
-              </div>
-              </a>
-              <a href="Home.html">
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/matrix.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">A trilogia "Matrix" segue a jornada de Neo, um hacker que descobre que o mundo que ele conhece é uma ilusão criada por máquinas para manter os humanos subjugados. Com a ajuda de Morpheus e Trinity, Neo se torna o escolhido e lidera uma rebelião contra as máquinas. A série explora temas de realidade virtual, livre arbítrio e a luta pela liberdade humana em um futuro distópico onde máquinas dominam a Terra.</p>
-                </div>
-              </div>
-              </a>
-        </section>
-        <h2 style="margin-left: 40px; padding-left: 10px; border-left: 2px solid #E2B616; color: white;" class="mt-5">Notícias Recentes</h2>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Exemplo Noticia.</h5>
-            <p class="card-text">Exemplo Noticia descricao detalhada sobre</p>
-            <p class="card-text"><small class="text-body-secondary">Ultima atualização 1 hora atrás.</small></p>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 h-100" src="./img/Superhomem.webp" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Super-homem</h5>
+              <p>O Unico e forte homem de aço.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 h-100" src="./img/homemFerro.webp" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Homem de Ferro</h5>
+              <p>O Bilhonário Tony Stark e sua busca pela paz no mundo.</p>
+            </div>
           </div>
         </div>
-        <section class="mt-5 w-60 d-flex flex-row align-content-center justify-content-around">
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class=" img-card-noticia">
-                <img src="./img/beyoncé.png" class="img-fluid img-noticia rounded-start  " alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Beyoncé estrela seu novo filme.</h5>
-                  <p class="card-text">O Novo filme musical com estrelato de beyoncé já apareceu como teaser no grammy desse ano.</p>
-                  <p class="card-text"><small class="text-body-secondary">Ultima atualização 1 hora atrás.</small></p>
-                </div>                
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class=" img-card-noticia">
-                <img src="./img/beyoncé.png" class="img-fluid img-noticia rounded-start  " alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Beyoncé estrela seu novo filme.</h5>
-                  <p class="card-text">O Novo filme musical com estrelato de beyoncé já apareceu como teaser no grammy desse ano.</p>
-                  <p class="card-text"><small class="text-body-secondary">Ultima atualização 1 hora atrás.</small></p>
-                </div>
+        <a class="carousel-control-prev" href="#carousel-main" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-main" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <h2 style="margin-left: 40px; padding-left: 10px; border-left: 2px solid #E2B616;color: white;">Em Destaque Hoje
+    </h2>
+    <section class="mt-5 w-100 d-flex flex-row align-content-center justify-content-around">
+      <div id="cardCarousel" class="carousel slide w-100" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./img/adão.png" alt="Card image cap"
+                style="max-width: 100%; height: auto;">
+              <div class="card-body">
+                <p class="card-text">"Adão Negro" conta a história de Teth-Adam, um antigo campeão egípcio que ganhou
+                  poderes mágicos que o transformaram em um ser superpoderoso, mas que, ao longo dos séculos, sucumbe à
+                  escuridão. Interpretado por Dwayne Johnson, o filme segue a jornada do Adão Negro em busca de redenção
+                  e justiça, enquanto ele enfrenta desafios sobrenaturais e outros super-heróis da DC.</p>
               </div>
             </div>
           </div>
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class=" img-card-noticia">
-                <img src="./img/beyoncé.png" class="img-fluid img-noticia rounded-start  " alt="...">
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./img/bezouro-azul.jpg" alt="Card image cap"
+                style="max-width: 100%; height: auto;">
+              <div class="card-body">
+                <p class="card-text">Bezouro Azul é um personagem de quadrinhos da DC Comics e parte da equipe Os Novos
+                  Titãs. O filme pode explorar as aventuras desse super-herói, também conhecido como Ted Kord.</p>
               </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Beyoncé estrela seu novo filme.</h5>
-                  <p class="card-text">O Novo filme musical com estrelato de beyoncé já apareceu como teaser no grammy desse ano.</p>
-                  <p class="card-text"><small class="text-body-secondary">Ultima atualização 1 hora atrás.</small></p>
-                </div>
             </div>
           </div>
-        </section>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Exemplo Noticia.</h5>
-            <p class="card-text">Exemplo Noticia descricao detalhada sobre</p>
-            <p class="card-text"><small class="text-body-secondary">Ultima atualização 1 hora atrás.</small></p>
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./img/avatar.jpg" alt="Card image cap"
+                style="max-width: 100%; height: auto;">
+              <div class="card-body">
+                <p class="card-text">"Avatar" segue a jornada de Jake Sully, um ex-militar paraplégico, que participa de
+                  um programa para habitar um avatar na lua Pandora. Lá, ele se apaixona por uma Na'vi, Neytiri, e se
+                  envolve em uma batalha épica entre os nativos e os humanos que desejam explorar os recursos do
+                  planeta. O filme é uma exploração de temas como colonização, respeito pela natureza e identidade.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./img/barbie.jpg" alt="Card image cap"
+                style="max-width: 100%; height: auto;">
+              <div class="card-body">
+                <p class="card-text">A série de filmes da Barbie é composta por várias histórias em que a boneca Barbie
+                  assume uma variedade de papéis e aventuras. Cada filme oferece uma narrativa única e muitas vezes
+                  aborda mensagens de amizade, autoaceitação e positividade. As histórias variam desde contos de fadas
+                  até aventuras modernas, sempre com a personagem Barbie no centro das experiências emocionantes.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./img/matrix.jpg" alt="Card image cap"
+                style="max-width: 100%; height: auto;">
+              <div class="card-body">
+                <p class="card-text">A trilogia "Matrix" segue a jornada de Neo, um hacker que descobre que o mundo que
+                  ele conhece é uma ilusão criada por máquinas para manter os humanos subjugados. Com a ajuda de
+                  Morpheus e Trinity, Neo se torna o escolhido e lidera uma rebelião contra as máquinas. A série explora
+                  temas de realidade virtual, livre arbítrio e a luta pela liberdade humana em um futuro distópico onde
+                  máquinas dominam a Terra.</p>
+              </div>
+            </div>
           </div>
         </div>
-    </main>
-    <footer id="home-footer"></footer>
+        <a class="carousel-control-prev" href="#cardCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#cardCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+      <script>
+        $(document).ready(function () {
+          $('#carousel-main').on('slid.bs.carousel', function () {
+            // Remover estilos do slide anterior
+            $('.carousel-item').not('.active').find('.card-img-top').css({
+              'max-width': '',
+              'height': 'auto'
+            });
+
+            // Aplicar estilos ao card ativo
+            $('.carousel-item.active .card-img-top').css({
+              'max-width': '7rem',
+              'height': '5rem'
+            });
+          });
+        });
+      </script>
+
+    </section>
+
+    <h2 style="margin-left: 40px; padding-left: 10px; border-left: 2px solid #E2B616; color: white;" class="mt-5">
+      Notícias Recentes</h2>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Exemplo Noticia.</h5>
+        <p class="card-text">Exemplo Noticia descricao detalhada sobre</p>
+        <p class="card-text"><small class="text-body-secondary">Ultima atualização 1 hora atrás.</small></p>
+      </div>
+    </div>
+    <section class="mt-5 w-60 d-flex align-content-center justify-content-around">
+      <div class="cardUm">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class=" img-card-noticia">
+              <img src="./img/beyoncé.png" class="img-fluid img-noticia rounded-start  " alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Beyoncé estrela seu novo filme.</h5>
+                <p class="card-text">O Novo filme musical com estrelato de beyoncé já apareceu como teaser no grammy
+                  desse ano.</p>
+                <p class="card-text"><small class="text-body-secondary">Ultima atualização 1 hora atrás.</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cardDois">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class=" img-card-noticia">
+              <img src="./img/beyoncé.png" class="img-fluid img-noticia rounded-start  " alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Beyoncé estrela seu novo filme.</h5>
+                <p class="card-text">O Novo filme musical com estrelato de beyoncé já apareceu como teaser no grammy
+                  desse ano.</p>
+                <p class="card-text"><small class="text-body-secondary">Ultima atualização 1 hora atrás.</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cardTres">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class=" img-card-noticia">
+              <img src="./img/beyoncé.png" class="img-fluid img-noticia rounded-start  " alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Beyoncé estrela seu novo filme.</h5>
+                <p class="card-text">O Novo filme musical com estrelato de beyoncé já apareceu como teaser no grammy
+                  desse ano.</p>
+                <p class="card-text"><small class="text-body-secondary">Ultima atualização 1 hora atrás.</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Exemplo Noticia.</h5>
+        <p class="card-text">Exemplo Noticia descricao detalhada sobre</p>
+        <p class="card-text"><small class="text-body-secondary">Ultima atualização 1 hora atrás.</small></p>
+      </div>
+    </div>
+  </main>
+  <footer id="home-footer"></footer>
 </body>
 <script src="./footer/footerScript.js"></script>
 <script src="./Menu/menuScript.js"></script>
+
 </html>

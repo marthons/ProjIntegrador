@@ -9,6 +9,22 @@ body .container {
     background-color: black;
 }
 
+.container-fluid {
+    background-color: black;
+}
+
+.carousel-item.active {
+    margin: 0;
+    border: 0;
+    width: 18;
+    height: auto;
+    box-sizing: 5px;
+    perspective: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+}
+
+
 .carousel-page-home {
     margin-top: 100px;
     width: 70%;
@@ -27,6 +43,11 @@ body .container {
 .card-img-top {
     min-height: 350px;
     height: 350px;
+}
+
+.mt-5 {
+    margin: 5px;
+    padding: 5px;
 }
 
 .card {
@@ -49,13 +70,19 @@ body .container {
 }
 
 .img-card-noticia  {
-    width: 150px;
-    height: 200px;
+    width: 7.5rem;
+    height: min-content;
 }
 
 .img-noticia {
-    max-height: 200px;
-    min-height: 200px;
+    align-items: center;
+    max-height: max-content;
+    min-height: min-content;
 }
 
+.cardUm, .cardDois, .cardTres{
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+}
 
