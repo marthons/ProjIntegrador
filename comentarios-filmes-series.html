@@ -19,7 +19,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="./js/script.js" defer></script>
-    <script src="./js/comentarios.js" defer></script>
+    <script type="module" src="./js/comentarios.js" defer></script>
     <title>Comentários Filmes&Séries</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -35,7 +35,7 @@
         <div class="filters">
             <form action="/pesquisar" method="GET">
                 <input type="text" name="q" placeholder="Pesquisar...">
-                <button type="submit">Pesquisar</button>
+                <button class="botao" type="submit">Pesquisar</button>
             </form>
         </div>
         <section>
@@ -61,7 +61,7 @@
             
                 <p class="result" id="result">Avaliação: 0 estrelas</p>
                 <div>
-                    <button type="submit">Comentar</button>
+                    <button class="botao" type="submit">Comentar</button>
                 </div>
             </form>
 

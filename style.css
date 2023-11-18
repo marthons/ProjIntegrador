@@ -80,6 +80,7 @@ select {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
+    color: #D0B312;
 }
 
 button {
@@ -88,6 +89,14 @@ button {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    -webkit-box-shadow: 8px 5px 4px -2px rgba(77,73,5,0.85); 
+    box-shadow: 8px 5px 4px -2px rgba(77,73,5,0.85);
+}
+
+.botao:hover {
+    background-color: #000;
+    color: #D0B312;
+    font-size: 1.5rem;
 }
 
 .content {
@@ -127,18 +136,28 @@ button {
     margin: auto;
 }
 
+a {
+    color: #DAA520;
+}
+
+a:hover {
+    color: #808000;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
 h1 {
-    color: #808080;
+    color: #B8860B;
     text-align: center;
 }
 
 h2 {
-    color: #808080;
+    color: #DAA520;
     text-align: center;
 }
 
 h3 {
-    color: #808080;
+    color: #BDB76B;
     text-align: center;
 }
 
@@ -171,16 +190,15 @@ p .texto {
     
 }
 
-.imagem1 {
+img:hover {
+    scale: 1.1;
+}
+
+
+.imagem {
     width: 100%;
     height: auto;
     display: block;
-}
-
-.imagem2 {
-    width: "100"
-    height "10"
-    display block;
     float: left;
     margin-right: 10
 }

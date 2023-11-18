@@ -1,72 +1,29 @@
-import { arrayDestaques } from "./postagens.js";
 import { arrayAtores } from "./postagens.js";
-
-document.addEventListener("DOMContentLoaded", function() {
-    const stars = document.querySelectorAll(".star");
-    const result = document.getElementById("result");
-
-    stars.forEach((star) => {
-        star.addEventListener("mouseover", function() {
-            const rating = this.getAttribute("data-rating");
-            highlightStars(rating);
-        });
-
-        star.addEventListener("mouseout", function() {
-            const currentRating = result.textContent.match(/\d+/);
-            highlightStars(currentRating);
-        });
-
-        star.addEventListener("click", function() {
-            const rating = this.getAttribute("data-rating");
-            result.textContent = `Avaliação: ${rating} estrelas`;
-        });
-    });
-
-    function highlightStars(rating) {
-        stars.forEach((star) => {
-            if (star.getAttribute("data-rating") <= rating) {
-                star.style.color = "gold";
-            } else {
-                star.style.color = "grey";
-            }
-        });
-    }
-});
+import { arrayDestaques } from "./postagens.js";
 
 
+for (let i = 0; i < arrayAtores.length; i++) {
+    let article = document.createElement("article");
 
-document.addEventListener("DOMContentLoaded", function() {
-    const comentarioForm = document.getElementById("comentario-form");
-    const comentariosDiv = document.getElementById("comentarios");
+    article.innerHTML = `
+    <div class="content">
+    <div class="item">
+    <div class="comment">
+     <h3>${arrayAtores[i].ator}</h3>
+     <img src="${arrayAtores[i].imagem}" alt="${arrayAtores[i].ator}" classe="imagem"><br><br>
+     <p class="sobre">Vida: ${arrayAtores[i].vida}</p>
+     <pclass="sobre">Obra: ${arrayAtores[i].obras}</p>
+     </div>
+     </div>
+     </div>
+     `;
 
-    comentarioForm.addEventListener("submit", function(event) {
-        event.preventDefault();
+    article.id = `post-${i + 1}`
 
-        const nomeUsuarioInput = document.getElementById("nome-usuario");
-        const nomeFilmeSerie = document.getElementById("nome-filme-serie").value;
-        const comentario = document.getElementById("comentario").value;
-        let nota = Math.floor(Math.random() * 5) + 1;
+    let main = document.querySelector("main");
+    main.appendChild(article);
 
-        // Adicione "@" automaticamente ao nome de usuário
-        const nomeUsuario = `@${nomeUsuarioInput.value}`;
-
-        // Crie um novo elemento para exibir o comentário
-        const novoComentario = document.createElement("div");
-        novoComentario.className = "comentario";
-        novoComentario.innerHTML = `
-            <h3>${nomeUsuario}</h3>
-            <p id="filme-serie">Filme/Série: ${nomeFilmeSerie}</p>
-            <p>Comentário: ${comentario}</p>
-            <p id="nota">Nota: ${nota}/5</p>
-        `;
-
-        // Adicione o novo comentário à lista de comentários
-        comentariosDiv.appendChild(novoComentario);
-
-        // Limpe os campos do formulário
-        comentarioForm.reset();
-    });
-});
+}
 
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
@@ -109,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h3>${resultado.ator}</h3>
                 <img src="${resultado.imagem}" alt="${resultado.ator}" class="imagem"><br><br>
                 <p class="sobre">Vida: ${resultado.vida}</p>
-                <p class="obras"><strong>Obras:</strong>Obra ${resultado.obras}</p>
+                <p class="obras"><strong>Obras:</strong>Obra: ${resultado.obras}</p>
               </article>
             `;
           }

@@ -141,24 +141,6 @@
           <span class="sr-only">Próximo</span>
         </a>
       </div>
-      <script>
-        $(document).ready(function () {
-          $('#carousel-main').on('slid.bs.carousel', function () {
-            // Remover estilos do slide anterior
-            $('.carousel-item').not('.active').find('.card-img-top').css({
-              'max-width': '',
-              'height': 'auto'
-            });
-
-            // Aplicar estilos ao card ativo
-            $('.carousel-item.active .card-img-top').css({
-              'max-width': '7rem',
-              'height': '5rem'
-            });
-          });
-        });
-      </script>
-
     </section>
 
     <h2 style="margin-left: 40px; padding-left: 10px; border-left: 2px solid #E2B616; color: white;" class="mt-5">
