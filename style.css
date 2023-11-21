@@ -93,11 +93,12 @@ button {
     box-shadow: 8px 5px 4px -2px rgba(77,73,5,0.85);
 }
 
-.botao:hover {
+button:hover {
     background-color: #000;
     color: #D0B312;
     font-size: 1.5rem;
 }
+
 
 .content {
     width: auto;
@@ -260,3 +261,20 @@ img:hover {
     cursor: default;
 }
 
+.img-perfil {
+    width: 5cm;
+    height: 5cm;
+    border-radius: 50%;
+    object-fit: cover; 
+    margin: 2rem;
+}
+
+.perfis {
+    display: flex;
+    margin: 5rem;
+}
+
+#perfil {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
