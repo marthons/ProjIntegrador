@@ -5,7 +5,7 @@ for (let i = 0; i < arrayDestaques.length; i++) {
 
     article.innerHTML = `
      <h3>${arrayDestaques[i].filme}</h3>
-     <img src="${arrayDestaques[i].imagem}" alt="${arrayDestaques[i].filme}" classe="imagem"><br><br>
+     <img class="img-dest" src="${arrayDestaques[i].imagem}" alt="${arrayDestaques[i].filme}" classe="imagem"><br><br>
      <p class="sobre">${arrayDestaques[i].sinopse}</p>
      <a href="${arrayDestaques[i].link}">Clique para assistir</a>
      `;

@@ -13,19 +13,19 @@ export const arrayDestaques = [
   },
   {
     filme: 'Homem de Ferro',
-    imagem: './img/man.png',
+    imagem: './img/homem-ferro.jpg',
     sinopse: 'Tony Stark (Robert Downey Jr.) é um industrial bilionário, que também é um brilhante inventor. Ao ser sequestrado ele é obrigado por terroristas a construir uma arma devastadora mas, ao invés disto, constrói uma armadura de alta tecnologia que permite que fuja de seu cativeiro. A partir de então ele passa a usá-la para combater o crime, sob o alter-ego do Homem de Ferro.',
     link: 'https://www.youtube.com/watch?v=xXAdp_KJ-0A'
   },
   {
     filme: 'Os Goonies',
-    imagem: './img/goonies.jpg',
+    imagem: './img/Goonies (1).jpg',
     sinopse: 'Com os prédios de seu bairro estando prestes a ser demolidos, o que forçará a mudança de todos os residentes do local, um grupo de garotos resolve organizar uma cerimônia de despedida do local. Quando descobrem um legítimo mapa do tesouro, capaz de torná-los ricos e evitar a destruição de suas casas, Os Goonies resolvem partir em uma grande aventura.',
     link: 'https://www.youtube.com/watch?v=eG2hX9Su7-w'
   },
   {
     filme: 'kill bill',
-    imagem: './img/killbill.jpg',
+    imagem: './img/Kill_Bill_poster.jpg',
     sinopse: 'A Noiva (Uma Thurman) é uma perigosa assassina que trabalhava em um grupo, liderado por Bill (David Carradine), composto principalmente por mulheres. Grávida, ela decide escapar dessa vida de violência e decide se casar, mas no dia da cerimônia seus companheiros de trabalho se voltam contra ela, quase a matando. Após cinco anos em coma, ela desperta sem um bebê e com um único desejo: vingança. A Noiva decide procurar, e matar, as cinco pessoas que destruiram o seu futuro, começando pelas perigosas assassinas Vernita Green (Vivica A. Fox) e O-Ren Ishii (Lucy Liu).',
     link: 'https://www.youtube.com/watch?v=_J4Ufh8K390'
   },

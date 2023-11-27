@@ -191,6 +191,11 @@ p .texto {
     
 }
 
+.img-dest {
+    width: 180px;
+    height: auto;
+}
+
 img:hover {
     scale: 1.1;
 }
