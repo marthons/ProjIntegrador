@@ -6,7 +6,7 @@ const footerMenuItems = [
     { label: "Facebook", link: "https://www.facebook.com" },
     { label: "Twitter", link: "https://twitter.com" },
     { label: "Instagram", link: "https://www.instagram.com" },
-    { label: "Sobre Nós", link: "http://haxiomic.github.io/GPU-Fluid-Experiments/html5/?q=Medium" },
+    { label: "Sobre Nós", link: "./sobre.html" },
 ];
 
 const footerMenuList = document.createElement("ul"); // Nome diferente para a lista
