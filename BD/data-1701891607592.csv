@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 "idator","nome","nacionalidade","data_nascimento"
 3,"Pedro Fernandes","Brasileiro","1982-05-10"
 17,"Miguel Costa","Brasileiro","1985-06-10"
+=======
+"idator","nome","nacionalidade","data_nascimento"
+3,"Pedro Fernandes","Brasileiro","1982-05-10"
+17,"Miguel Costa","Brasileiro","1985-06-10"
+>>>>>>> 811f949d0f3eefee1b553d379553acafa4562274
