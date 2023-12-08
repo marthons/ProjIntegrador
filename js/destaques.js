@@ -4,10 +4,13 @@ for (let i = 0; i < arrayDestaques.length; i++) {
     let article = document.createElement("article");
 
     article.innerHTML = `
-     <h3>${arrayDestaques[i].filme}</h3>
-     <img class="img-dest" src="${arrayDestaques[i].imagem}" alt="${arrayDestaques[i].filme}" classe="imagem"><br><br>
-     <p class="sobre">${arrayDestaques[i].sinopse}</p>
-     <a href="${arrayDestaques[i].link}">Clique para assistir</a>
+    <div class = "destaque-container">
+        <h3 class = "dest">${arrayDestaques[i].filme}</h3>
+        <img class="img-dest" src="${arrayDestaques[i].imagem}" alt="${arrayDestaques[i].filme}" classe="imagem">
+        <p class="sobre ">${arrayDestaques[i].sinopse}</p>
+        <button onclick="window.location.href='${arrayDestaques[i].link}'">Assistir</button>
+    </div>
+
      `;
 
     article.id = `post-${i + 1}`

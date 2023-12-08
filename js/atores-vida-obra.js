@@ -10,9 +10,9 @@ for (let i = 0; i < arrayAtores.length; i++) {
     <div class="item">
     <div class="comment">
      <h3>${arrayAtores[i].ator}</h3>
-     <img src="${arrayAtores[i].imagem}" alt="${arrayAtores[i].ator}" classe="imagem"><br><br>
-     <p class="sobre">Vida: ${arrayAtores[i].vida}</p>
-     <pclass="sobre">Obra: ${arrayAtores[i].obras}</p>
+     <img src="${arrayAtores[i].imagem}" alt="${arrayAtores[i].ator}" classe="imagem">
+     <p class="sobre-vida">Vida: ${arrayAtores[i].vida}</p>
+     <p class="sobre-obra">Obra: ${arrayAtores[i].obras}</p>
      </div>
      </div>
      </div>

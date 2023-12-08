@@ -1,16 +1,17 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: black;
 }
 
-body .container {
-    background-color: black;
+body {
+    background-image: url(./apresentacao/rolo-filme.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
 }
 
-.container-fluid {
-    background-color: black;
+.container-fluid{
+    background-color: #000;
 }
 
 .carousel-item.active {
@@ -105,3 +106,17 @@ body .container {
     width: 100%;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+  
+  
+::-webkit-scrollbar-thumb {
+    background-color: #D0B312; 
+    border-radius: 6px;
+}
+  
+  
+::-webkit-scrollbar-thumb:hover {
+    background-color: #B59E0F; 
+}

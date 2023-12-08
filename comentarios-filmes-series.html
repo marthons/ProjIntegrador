@@ -29,83 +29,84 @@
 
     <main>
         <div class="banner">
-            <img src=".\img\bannerPromo.jpg" alt="Banner Promocional" class="imagem1">
+            <img src=".\img\bannerPromo.jpg" alt="Banner Promocional" class="imagem">
         </div>
+        <div>
+            <section>
+                <h1>Deixe seu Comentário e Avaliação</h1>
 
-        <div class="filters">
-            <form action="/pesquisar" method="GET">
-                <input type="text" name="q" placeholder="Pesquisar...">
-                <button class="botao" type="submit">Pesquisar</button>
-            </form>
+                <form id="comentario-form">
+                    <label for="nome-usuario">Seu Nome:</label>
+                    <input type="text" id="nome-usuario" required>
+
+                    <label for="nome-filme-serie">Nome do Filme ou Série:</label>
+                    <input type="text" id="nome-filme-serie" required>
+
+                    <label for="comentario">Comentário:</label>
+                    <textarea id="comentario" rows="4" required></textarea>
+
+                    <div class="rating" id="rating">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                    </div>
+
+                    <p class="result" id="result">Avaliação: 0 estrelas</p>
+                    <div>
+                        <button class="botao" type="submit">Comentar</button>
+                    </div>
+                </form>
+
+                <div id="comentarios">
+                    <div class="comentario">
+                        <h3>@PulpFictionFan</h3>
+                        <p id="filme-serie">Filme/Série: Chaplin</p>
+                        <p>Cometário: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit in recusandae,
+                            distinctio quod vero dicta minus nemo esse accusamus ipsum vel natus aliquam quisquam! Iure
+                            fugit enim ipsum, officia culpa laudantium consectetur voluptas laborum, molestiae
+                            architecto
+                            fuga sit eveniet qui quisquam numquam quis porro earum illo incidunt. Sint, ratione libero.
+                        </p>
+                        <span class="star2" data-rating="1">&#9733;</span>
+                        <span class="star2" data-rating="1">&#9733;</span>
+                        <span class="star2" data-rating="1">&#9733;</span>
+                    </div>
+                    <div class="comentario">
+                        <h3>@InceptionEnthusiast</h3>
+                        <p id="filme-serie">Filme/Série: Matrix</p>
+                        <p>Cometário: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odio tempora iste
+                            quisquam a nisi officia dolor provident maxime quidem, odit nulla esse omnis nobis optio
+                            sunt
+                            minus nostrum enim temporibus! Aperiam eius nulla corrupti perferendis, sapiente rem.
+                            Provident
+                            maxime est officia alias nihil laudantium labore beatae quae unde cupiditate.</p>
+                        <span class="star2" data-rating="1">&#9733;</span>
+                        <span class="star2" data-rating="1">&#9733;</span>
+                        <span class="star2" data-rating="1">&#9733;</span>
+                        <span class="star2" data-rating="1">&#9733;</span>
+
+                    </div>
+                    <div class="comentario">
+                        <h3>@GodfatherGuru</h3>
+                        <p id="filme-serie">Filme/Série: Os Goonies</p>
+                        <p>Cometário: Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum itaque animi,
+                            laudantium optio sit perspiciatis dolores facilis sunt consequatur autem voluptatibus
+                            assumenda
+                            expedita voluptatum recusandae aliquam quis dignissimos perferendis aliquid ipsa sint
+                            repudiandae. Ipsum quae repellendus animi saepe voluptas omnis et, voluptatibus labore
+                            molestias, error sint tenetur ratione enim explicabo?</p>
+                        <span class="star2" data-rating="1">&#9733;</span>
+                        <span class="star2" data-rating="1">&#9733;</span>
+                        <span class="star2" data-rating="1">&#9733;</span>
+                        <span class="star2" data-rating="1">&#9733;</span>
+                        <span class="star2" data-rating="1">&#9733;</span>
+
+                    </div>
+                </div>
+            </section>
         </div>
-        <section>
-            <h1>Deixe seu Comentário e Avaliação</h1>
-
-            <form id="comentario-form">
-                <label for="nome-usuario">Seu Nome:</label>
-                <input type="text" id="nome-usuario" required>
-
-                <label for="nome-filme-serie">Nome do Filme ou Série:</label>
-                <input type="text" id="nome-filme-serie" required>
-
-                <label for="comentario">Comentário:</label>
-                <textarea id="comentario" rows="4" required></textarea>
-
-                <div class="rating" id="rating">
-                    <span class="star" data-rating="1">&#9733;</span>
-                    <span class="star" data-rating="2">&#9733;</span>
-                    <span class="star" data-rating="3">&#9733;</span>
-                    <span class="star" data-rating="4">&#9733;</span>
-                    <span class="star" data-rating="5">&#9733;</span>
-                </div>
-            
-                <p class="result" id="result">Avaliação: 0 estrelas</p>
-                <div>
-                    <button class="botao" type="submit">Comentar</button>
-                </div>
-            </form>
-
-            <div id="comentarios">
-                <div class="comentario">
-                    <h3>@PulpFictionFan</h3>
-                    <p id="filme-serie">Filme/Série: Chaplin</p>
-                    <p>Cometário: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit in recusandae,
-                        distinctio quod vero dicta minus nemo esse accusamus ipsum vel natus aliquam quisquam! Iure
-                        fugit enim ipsum, officia culpa laudantium consectetur voluptas laborum, molestiae architecto
-                        fuga sit eveniet qui quisquam numquam quis porro earum illo incidunt. Sint, ratione libero.</p>
-                        <span class="star2" data-rating="1">&#9733;</span>
-                        <span class="star2" data-rating="1">&#9733;</span>
-                        <span class="star2" data-rating="1">&#9733;</span>
-                </div>
-                <div class="comentario">
-                    <h3>@InceptionEnthusiast</h3>
-                    <p id="filme-serie">Filme/Série: Matrix</p>
-                    <p>Cometário: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odio tempora iste
-                        quisquam a nisi officia dolor provident maxime quidem, odit nulla esse omnis nobis optio sunt
-                        minus nostrum enim temporibus! Aperiam eius nulla corrupti perferendis, sapiente rem. Provident
-                        maxime est officia alias nihil laudantium labore beatae quae unde cupiditate.</p>
-                        <span class="star2" data-rating="1">&#9733;</span>
-                        <span class="star2" data-rating="1">&#9733;</span>
-                        <span class="star2" data-rating="1">&#9733;</span>
-                        <span class="star2" data-rating="1">&#9733;</span>
-
-                </div>
-                <div class="comentario">
-                    <h3>@GodfatherGuru</h3>
-                    <p id="filme-serie">Filme/Série: Os Goonies</p>
-                    <p>Cometário: Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum itaque animi,
-                        laudantium optio sit perspiciatis dolores facilis sunt consequatur autem voluptatibus assumenda
-                        expedita voluptatum recusandae aliquam quis dignissimos perferendis aliquid ipsa sint
-                        repudiandae. Ipsum quae repellendus animi saepe voluptas omnis et, voluptatibus labore
-                        molestias, error sint tenetur ratione enim explicabo?</p>
-                        <span class="star2" data-rating="1">&#9733;</span>
-                        <span class="star2" data-rating="1">&#9733;</span>
-                        <span class="star2" data-rating="1">&#9733;</span>
-                        <span class="star2" data-rating="1">&#9733;</span>
-                        <span class="star2" data-rating="1">&#9733;</span>
-
-                </div>
-            </div>
     </main>
     <script src="./Menu/menuScript.js"></script>
 

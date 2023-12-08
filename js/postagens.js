@@ -24,7 +24,7 @@ export const arrayDestaques = [
     link: 'https://www.youtube.com/watch?v=eG2hX9Su7-w'
   },
   {
-    filme: 'kill bill',
+    filme: 'Kill Bill',
     imagem: './img/Kill_Bill_poster.jpg',
     sinopse: 'A Noiva (Uma Thurman) é uma perigosa assassina que trabalhava em um grupo, liderado por Bill (David Carradine), composto principalmente por mulheres. Grávida, ela decide escapar dessa vida de violência e decide se casar, mas no dia da cerimônia seus companheiros de trabalho se voltam contra ela, quase a matando. Após cinco anos em coma, ela desperta sem um bebê e com um único desejo: vingança. A Noiva decide procurar, e matar, as cinco pessoas que destruiram o seu futuro, começando pelas perigosas assassinas Vernita Green (Vivica A. Fox) e O-Ren Ishii (Lucy Liu).',
     link: 'https://www.youtube.com/watch?v=_J4Ufh8K390'
