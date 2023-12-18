@@ -77,7 +77,7 @@ label {
     color: #808080;
 }
 
-input[type="text"],
+input[type="password"], input[type="text"],
 textarea,
 select {
     background-color: #000;
