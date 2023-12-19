@@ -4,8 +4,8 @@
 }
 
 body {
-    background-image: url(./apresentacao/rolo-filme.jpg);
-    background-repeat: repeat;
+    background-image: url(./apresentacao/dourado.jpg);
+    background-repeat: round;
     background-position: center;
     background-size: contain;
     font-family: Arial, sans-serif;
