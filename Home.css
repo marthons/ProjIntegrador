@@ -4,8 +4,8 @@
 }
 
 body {
-    background-image: url(./apresentacao/dourado.jpg);
-    background-repeat: repeat;
+    background-image: url(./apresentacao/dark-grey-bg.jpg);
+    background-repeat: round;
     background-position: center;
     background-size: contain;
 }
